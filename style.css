@@ -23,7 +23,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px;
 }
 
 .hero h1 {
@@ -31,6 +30,7 @@ body {
     font-weight: lighter;
     text-align: center;
     position: relative;
+    margin: 10px;
 }
 
 .overlay {
