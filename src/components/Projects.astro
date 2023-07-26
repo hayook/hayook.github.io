@@ -1,0 +1,150 @@
+---
+import projects from "../content/projects.json";
+import Github from "./icons/Github.astro";
+const github = "https://www.github.com/hayook/";
+const host = "http://works.hayeddine.me/";
+---
+
+<section class="projects">
+  <div class="container">
+    {
+      projects.map((project) => {
+        return (
+          <div class="project">
+            <img src={`projects/${project.image}`} alt={project.title} />
+            <div class="main">
+              <h1>{project.title}</h1>
+              <div class="links">
+                {project.deployment && (
+                  <a
+                    href={host + project.repoName}
+                    class="demo"
+                    target="_blank"
+                  >
+                    Live Demo
+                  </a>
+                )}
+                <a
+                  href={github + project.repoName}
+                  class="src-code"
+                  target="_blank"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+        );
+      })
+    }
+  </div>
+</section>
+
+<script>
+  const els = document.querySelectorAll(".project");
+
+  const options = { threshold: 0.6 };
+  const cb = (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        observer.unobserve(entry.target);
+      }
+    });
+  };
+  const observer = new IntersectionObserver(cb, options);
+
+  els.forEach((el) => observer.observe(el));
+</script>
+
+<style>
+  section.projects {
+    padding: 100px 0;
+  }
+
+  section.projects .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  section.projects .container .project {
+    display: flex;
+    flex-direction: column;
+    gap: 2.3rem;
+  }
+
+  section.projects .project img {
+    display: block;
+    width: 100%;
+    position: relative;
+    left: -100%;
+    filter: blur(2px);
+    transition: left 0.8s, transform 1.4s 0.3s, box-shadow 1.4s 0.3s,
+      filter 0.4s;
+  }
+
+  section.projects .container .project.show img {
+    left: 0;
+    filter: unset;
+  }
+
+  section.projects .project .main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  section.projects .container .project h1 {
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: 0.8s 0.5s;
+  }
+
+  section.projects .container .project.show h1 {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  section.projects .project .links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: 0.8s 0.6s;
+  }
+
+  section.projects .project.show .links {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  section.projects .project .links a {
+    border: 1px solid black;
+    padding: 0.5rem 1rem;
+    color: black;
+    text-decoration: none;
+  }
+
+  section.projects .project .links a.demo {
+    background-color: black;
+    color: white;
+  }
+
+  @media (min-width: 992px) {
+    section.projects .container .project {
+      flex-direction: row;
+    }
+
+    section.projects .project img {
+      width: 600px;
+    }
+
+    section.projects .project.show img {
+      transform: rotateX(-11deg) rotateY(-21deg) rotateZ(-8deg);
+      box-shadow: -27px 40px 40px -25px #000;
+    }
+  }
+</style>

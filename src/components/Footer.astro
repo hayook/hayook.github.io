@@ -1,0 +1,53 @@
+---
+import Github from "./icons/Github.astro";
+import Twitter from "./icons/Twitter.astro";
+import LinkedIn from "./icons/LinkedIn.astro";
+import Mail from "./icons/Mail.astro";
+---
+
+<footer>
+  <div class="container">
+    <span>Copyright &copy; 2023</span>
+    <a href="https:///www.hayeddine.me/#about" target="_blank"
+      >Hayeddine Kelious</a
+    >
+    <div class="sm-icons">
+      <a href="https://github.com/hayook" class="sm-icon"><Github /></a>
+      <a href="https://twitter.com/k_hayoo" class="sm-icon"><Twitter /></a>
+      <a
+        href="https://www.linkedin.com/in/hayeddine-kelious-70a494229/"
+        class="sm-icon"><LinkedIn /></a
+      >
+      <a href="mailto:hay.eddine8@gmail.com" class="sm-icon"><Mail /></a>
+    </div>
+  </div>
+</footer>
+
+<style>
+  footer {
+    padding: 1.3rem 0;
+    background: black;
+    color: white;
+  }
+
+  footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  footer .sm-icons {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  footer .sm-icons a.sm-icon {
+    width: 20px;
+  }
+
+  footer .container a {
+    text-decoration: none;
+    color: white;
+  }
+</style>
