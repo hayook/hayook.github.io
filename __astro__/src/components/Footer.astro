@@ -36,6 +36,13 @@ import Mail from "./icons/Mail.astro";
     justify-content: space-between;
   }
 
+  @media (max-width: 767px) {
+    footer .container {
+      flex-direction: column;
+      gap: .8rem;
+    }
+  }
+
   footer .sm-icons {
     display: flex;
     align-items: center;
