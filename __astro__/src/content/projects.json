@@ -1,44 +1,57 @@
 [
-    {
-        "title": "Remote Code Execution Engine",
-        "image": "rcee.png",
-        "repoName": "RCEE",
-        "deployment": false
-    },
-    {
-        "title": "Djaber's Portfolio",
-        "image": "djaber.png",
-        "repoName": "djaber",
-        "deployment": true
-    },
-    {
-        "title": "Flags Quiz",
-        "image": "flags-quiz.png",
-        "repoName": "flags-quiz",
-        "deployment": true
-    },
-    {
-        "title": "Teacher Home Page Template",
-        "image": "teacher-home.png",
-        "repoName": "Teacher-Home",
-        "deployment": true
-    },
-    {
-        "title": "F-R Template",
-        "image": "fr.png",
-        "repoName": "F-R-Template",
-        "deployment": true
-    },
-    {
-        "title": "Kasper Template",
-        "image": "kasper.png",
-        "repoName": "Kasper-Template",
-        "deployment": true
-    },
-    {
-        "title": "Leon Template",
-        "image": "leon.png",
-        "repoName": "Leon-Template",
-        "deployment": true
-    }
+	{
+		"title": "Remote Code Execution Engine",
+		"image": "rcee.png",
+		"repoName": "RCEE",
+		"deployment": false
+	},
+	{
+		"title": "NeoChip club website",
+		"image": "neochip.png",
+		"customDeploy": "https://capable-mermaid-4916c7.netlify.app/",
+		"repoName": false,
+		"deployment": true
+	},
+	{
+		"title": "Lixware",
+		"image": "lixware.png",
+		"repoName": "lixware",
+		"deployment": false
+	},
+	{
+		"title": "Djaber's Portfolio",
+		"image": "djaber.png",
+		"repoName": "djaber",
+		"deployment": true
+	},
+	{
+		"title": "Flags Quiz",
+		"image": "flags-quiz.png",
+		"repoName": "flags-quiz",
+		"deployment": true
+	},
+	{
+		"title": "School management system",
+		"image": "teacher-home.png",
+		"repoName": "Teacher-Home",
+		"deployment": true
+	},
+	{
+		"title": "F-R Template",
+		"image": "fr.png",
+		"repoName": "F-R-Template",
+		"deployment": true
+	},
+	{
+		"title": "Kasper Template",
+		"image": "kasper.png",
+		"repoName": "Kasper-Template",
+		"deployment": true
+	},
+	{
+		"title": "Leon Template",
+		"image": "leon.png",
+		"repoName": "Leon-Template",
+		"deployment": true
+	}
 ]

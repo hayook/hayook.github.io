@@ -15,22 +15,25 @@ const host = "http://hayook.github.io/";
             <div class="main">
               <h1>{project.title}</h1>
               <div class="links">
+				{/* these are quick fix, i have to change this implementation */}
                 {project.deployment && (
                   <a
-                    href={host + project.repoName}
+                    href={project?.customDeploy || host + project.repoName}
                     class="demo"
                     target="_blank"
                   >
                     Live Demo
                   </a>
                 )}
-                <a
-                  href={github + project.repoName}
-                  class="src-code"
-                  target="_blank"
-                >
-                  Source Code
-                </a>
+				{project.repoName && (
+				  <a
+					href={github + project.repoName}
+					class="src-code"
+					target="_blank"
+				  >
+					Source Code
+				  </a>
+				)}
               </div>
             </div>
           </div>
@@ -64,10 +67,9 @@ const host = "http://hayook.github.io/";
 
   section.projects .container {
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem 2rem;
   }
   section.projects .container .project {
     display: flex;
@@ -136,6 +138,7 @@ const host = "http://hayook.github.io/";
   @media (min-width: 992px) {
     section.projects .container .project {
       flex-direction: row;
+	  align-items: flex-start;
     }
 
     section.projects .project img {
