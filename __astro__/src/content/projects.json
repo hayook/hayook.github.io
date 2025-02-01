@@ -6,11 +6,23 @@
 		"deployment": false
 	},
 	{
+		"title": "Freelync - Freelancing platform clone",
+		"image": "freelync.png",
+		"repoName": "freelync-client",
+		"deployment": false
+	},
+	{
 		"title": "NeoChip club website",
 		"image": "neochip.png",
 		"customDeploy": "https://capable-mermaid-4916c7.netlify.app/",
 		"repoName": false,
 		"deployment": true
+	},
+	{
+		"title": "Dev Community",
+		"image": "dev-community.png",
+		"repoName": "dev-community-client",
+		"deployment": false
 	},
 	{
 		"title": "Lixware",
