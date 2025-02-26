@@ -1,12 +1,14 @@
 [
 	{
 		"title": "Remote Code Execution Engine",
+		"description": "MeetCode is a remote code engine, in other words it's a web application where you write, compile and run your code, currently supported languages include C, Python and JavaScript, it's built using React and Node.js",
 		"image": "rcee.png",
 		"repoName": "RCEE",
 		"deployment": false
 	},
 	{
 		"title": "Freelync - Freelancing platform clone",
+		"description": "Freelync is a simple freelancing platform clone, where users can create offers with basic information such as title, description, budget, technologies required etc. Other features like edit, delete and search for offers, authentication are also implemented, in addition to authorization so that a user can not edit or delete offers of others.",
 		"image": "freelync.png",
 		"repoName": "freelync-client",
 		"deployment": false
@@ -20,12 +22,14 @@
 	},
 	{
 		"title": "Dev Community",
+		"description": "Dev-Community is a social media platform designed for developers to share knowledge, collaborate on projects, and engage in Q&A sessions. Users can share posts, ask questions, and interact with others through likes and comments. They can also start projects, invite developers, assign tasks, and track progress. Built with React for a dynamic user interface, FastAPI for a high-performance backend, and MySQL for robust data management. ",
 		"image": "dev-community.png",
 		"repoName": "dev-community-client",
 		"deployment": false
 	},
 	{
 		"title": "Lixware",
+		"description": "Lixware is a web application made with Next.js and designed to help users learn new words by providing their meanings, synonyms, and example sentences, making it easier to expand vocabulary.",
 		"image": "lixware.png",
 		"repoName": "lixware",
 		"deployment": false
